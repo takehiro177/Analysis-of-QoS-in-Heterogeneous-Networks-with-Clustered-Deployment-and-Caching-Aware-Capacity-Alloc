@@ -119,7 +119,7 @@ lambda_i = lambda_1;
 p_3oasso132 = (1+(lambda_k./lambda_j)*(P_k/P_j).^(2/alpha)).^(-1).*((lambda_1./lambda_i)*(P_1/P_i).^(2/alpha)+(lambda_2_ppp./lambda_i)*(P_2/P_i).^(2/alpha)+(lambda_3./lambda_i)*(P_3/P_i).^(2/alpha)).^(-1);
 fprintf('(PPP) Ordered Three Tier Association Probability [2 < 3 < 1]: %.11f \n', p_3oasso132)
 
-%{
+
 % PPP-PPCP
 % (Order of 2)
 %### Library 
@@ -157,7 +157,7 @@ oasso132 = integral(@(r_i) oasso132_fff(r_i), 0, Inf,'ArrayValued',true, 'RelTol
 %}
 oasso132 = tasso1 - oasso123;
 fprintf('(PPCP) Orderd Three Tier Association Probability [2 < 3 < 1]: %.11f \n', oasso132)
-%}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% Average Ergodic Rate PPP-PPP/PPCP %%%%%%%
@@ -227,8 +227,7 @@ fprintf('(PPP) Average Ergodic Rate [Case 1]: %.11f \n', total_U_1_ppp)
 plot(a,total_U_1_ppp)
 
 
-
-%{           
+      
 %%%%%%%%%%
 % Case 2 %
 %%%%%%%%%%
@@ -295,7 +294,6 @@ ylabel('Average ergodic rate [nats/sec/MHz]')
 %---------------------------------------------------------------------------------------------------
 % PPP-PPCP
 
-%}
 
 
 % for matrix operation
